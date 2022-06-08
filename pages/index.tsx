@@ -1,84 +1,79 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
+import MenuIcon from '@mui/icons-material/Menu';
 import Image from 'next/image'
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <div className="scroll-smooth">
       <Head>
-        <title>Create Next App</title>
+        <title>Nicholas Goes - Portfolio Page</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
-
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and its API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <header className='flex justify-between items-center w-full p-6 transparent fixed '>
+        <div className="">
+          <h1 className="text-white">Nicholas <span className="text-blue-300">Goes</span></h1>
         </div>
-      </main>
 
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </a>
+        <nav>
+          <ul className='hidden md:flex justify-center items-center w-full text-white'>
+            <li className='px-6'><Link href="#home">Home</Link></li>
+            <li className='px-6'><Link href="#sobre">Sobre</Link></li>
+            <li className='px-6'><Link href={''}>Projetos</Link></li>
+            <li className='px-6'><Link href={''}>Contato</Link></li>            
+          </ul>
+          <div className="md:hidden text-white">
+            <MenuIcon></MenuIcon>
+          </div>
+        </nav>       
+      </header>
+
+      <main>
+        <section className='flex flex-col md:flex-row justify-center items-center bg-zinc-900 py-64 w-full' id='home'>
+          <div className='flex flex-col justify-center items-center'>
+            <h2 className='text-sm text-white'>Front-End Web Developer</h2>
+            <h1 className='text-5xl text-white'>Nicholas <span className='text-blue-300'>Goes</span></h1>
+          </div>
+
+          <div className='flex absolute opacity-10'>
+            <Image src="/loup_tribal.svg" alt='wolf logo' width={256} height={316}/>   
+          </div>    
+        </section>
+
+        <section className='flex flex-row justify-center items-center bg-zinc-900 p-24' id='sobre'>
+          <div className="flex flex-col justify-center items-center mt-10 mb-10">
+            <h1 className='text-3xl text-white mb-6'>Sobre Mim</h1>
+            <p className='text-center text-sm text-white'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cupiditate labore maiores voluptatem obcaecati ea accusantium, facere incidunt beatae id debitis? Cum nulla esse modi nihil quod nemo est voluptatibus?</p>
+          </div>
+        </section>
+
+        <section className='flex flex-col justify-center items-center bg-zinc-900' id='projetos'>
+            <h1 className='text-3xl text-white mb-6'>Projetos</h1>
+
+            <div className='p-6'>
+              <Image src="/loup_tribal.svg" alt='wolf logo' width={128} height={128}/>
+              <Image src="/loup_tribal.svg" alt='wolf logo' width={128} height={128}/>
+              <Image src="/loup_tribal.svg" alt='wolf logo' width={128} height={128}/>           
+            </div>
+        </section>
+
+        <section className='flex flex-col justify-center items-center bg-zinc-900' id='projetos'>
+          <h1 className='text-3xl text-white mb-6'>Contato</h1>
+
+          <div className='p-6'>
+            <Image src="/loup_tribal.svg" alt='wolf logo' width={128} height={128}/>
+            <Image src="/loup_tribal.svg" alt='wolf logo' width={128} height={128}/>
+            <Image src="/loup_tribal.svg" alt='wolf logo' width={128} height={128}/>           
+          </div>
+        </section>
+        
+      </main>
+      <footer className='flex flex-row justify-center items-center bg-zinc-900 p-6'>
+        <address className="text-white">Feito com ❤ por Nicholas Goes</address>
       </footer>
+
     </div>
   )
 }
