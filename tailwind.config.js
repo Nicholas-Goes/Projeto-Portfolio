@@ -4,7 +4,14 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-pattern': "url('/wallpaper.jpg')",
+      },
+      fontFamily: {
+        'DMSans': ['DM Sans', 'Cursive'],
+      },
+    },
   },
   plugins: [],
 }
