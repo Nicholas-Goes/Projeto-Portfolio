@@ -14,7 +14,7 @@ const Home: NextPage = () => {
 
       <header className='flex justify-between items-center w-full p-6 transparent fixed '>
         <div className="">
-          <h1 className="text-white">Nicholas <span className="text-blue-300">Goes</span></h1>
+          <h1 className="text-white">Nicholas <span className="text-orange-300">Goes</span></h1>
         </div>
 
         <nav>
@@ -31,14 +31,14 @@ const Home: NextPage = () => {
       </header>
 
       <main>
-        <section className='flex flex-col md:flex-row justify-center items-center bg-zinc-900 py-64 w-full' id='home'>
+        <section className='flex flex-col md:flex-row justify-center items-center bg-zinc-900 py-96 w-full' id='home'>
           <div className='flex flex-col justify-center items-center'>
             <h2 className='text-sm text-white'>Front-End Web Developer</h2>
-            <h1 className='text-5xl text-white'>Nicholas <span className='text-blue-300'>Goes</span></h1>
+            <h1 className='text-5xl text-white'>Nicholas <span className='text-orange-300'>Goes</span></h1>
           </div>
 
           <div className='flex absolute opacity-10'>
-            <Image src="/loup_tribal.svg" alt='wolf logo' width={256} height={316}/>   
+            <Image src="/loup_tribal.svg" alt='wolf logo' width={316} height={442}/>   
           </div>    
         </section>
 
