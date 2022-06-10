@@ -41,7 +41,7 @@ const Home: NextPage = () => {
       </header>
 
       <main>
-        <section className='flex flex-col md:flex-row justify-center items-center bg-hero-pattern bg-cover bg-center py-96 w-full' id='home'>
+        <section className='flex flex-col md:flex-row justify-center items-center bg-hero-pattern bg-cover bg-center py-80 w-full' id='home'>
 
           <div className='flex flex-col justify-center items-center'>
 
@@ -50,46 +50,40 @@ const Home: NextPage = () => {
 
           </div>
 
-          <div className='flex absolute opacity-30'>
+          <div className='mx-8 flex absolute opacity-30'>
             <Image src="/loup_tribal.svg" alt='wolf logo' width={316} height={442}/>   
           </div>
 
         </section>
 
-        <section className='flex flex-row justify-center items-center bg-zinc-900 p-24' id='sobre'>
-
-          <div className="flex flex-col justify-center items-center mt-10 mb-10">
-
-            <h1 className='text-3xl text-white mb-6'>Sobre Mim</h1>
-            <p className='text-center text-sm text-white'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cupiditate labore maiores voluptatem obcaecati ea accusantium, facere incidunt beatae id debitis? Cum nulla esse modi nihil quod nemo est voluptatibus?</p>
-
+        <section className='flex flex-row justify-center items-center bg-zinc-900 p-36' id='sobre'>
+          <div className="flex flex-Row justify-center items-center mt-10 mb-10">
+              <Image src="/loup_tribal.svg" alt='wolf logo' width={512} height={512}/>  
+            <div className=''>
+              <h1 className='text-3xl text-white mb-6 text-left'>Sobre Mim</h1> 
+              <p className='text-left text-sm text-white'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cupiditate labore maiores voluptatem obcaecati ea accusantium, facere incidunt beatae id debitis? Cum nulla esse modi nihil quod nemo est voluptatibus?</p>
+            </div>       
           </div>
-
         </section>
 
         <section className='flex flex-col justify-center items-center bg-zinc-900' id='projetos'>
 
             <h1 className='text-3xl text-white mb-6'>Projetos</h1>
 
-            <div className='p-6'>
+            <div className='m-8 flex'>
 
-              <Image src="/loup_tribal.svg" alt='wolf logo' width={128} height={128}/>
-              <Image src="/loup_tribal.svg" alt='wolf logo' width={128} height={128}/>
-              <Image src="/loup_tribal.svg" alt='wolf logo' width={128} height={128}/>  
+              <div className='p-8'>
+                <Image src="/loup_tribal.svg" alt='wolf logo' width={512} height={256}/>
+              </div>
 
+              <div className='p-8'>
+                <Image src="/loup_tribal.svg" alt='wolf logo' width={512} height={256}/>
+              </div>
+
+              <div className='p-8'>
+                <Image src="/loup_tribal.svg" alt='wolf logo' width={512} height={256}/>
+              </div>
             </div>
-
-        </section>
-
-        <section className='flex flex-col justify-center items-center bg-zinc-900' id='projetos'>
-
-          <h1 className='text-3xl text-white mb-6'>Contato</h1>
-
-          <div className='p-6'>
-            <Image src="/loup_tribal.svg" alt='wolf logo' width={128} height={128}/>
-            <Image src="/loup_tribal.svg" alt='wolf logo' width={128} height={128}/>
-            <Image src="/loup_tribal.svg" alt='wolf logo' width={128} height={128}/>           
-          </div>
 
         </section>
         
