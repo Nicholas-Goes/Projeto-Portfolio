@@ -41,7 +41,7 @@ const Home: NextPage = () => {
       </header>
 
       <main>
-        <section className='flex flex-col md:flex-row justify-center items-center bg-hero-pattern bg-cover bg-center py-80 w-full' id='home'>
+        <section className='flex flex-col md:flex-row justify-center items-center bg-hero-pattern bg-cover bg-center py-96 w-full' id='home'>
 
           <div className='flex flex-col justify-center items-center'>
 
@@ -56,7 +56,7 @@ const Home: NextPage = () => {
 
         </section>
 
-        <section className='flex flex-row justify-center items-center bg-zinc-900 p-36' id='sobre'>
+        <section className='flex flex-row justify-center items-center bg-zinc-900 p-16' id='sobre'>
           <div className="flex flex-Row justify-center items-center mt-10 mb-10">
               <Image src="/loup_tribal.svg" alt='wolf logo' width={512} height={512}/>  
             <div className=''>
@@ -66,7 +66,7 @@ const Home: NextPage = () => {
           </div>
         </section>
 
-        <section className='flex flex-col justify-center items-center bg-zinc-900' id='projetos'>
+        <section className='flex flex-col justify-center items-center bg-zinc-900 p-16' id='projetos'>
 
             <h1 className='text-3xl text-white mb-6'>Projetos</h1>
 
