@@ -73,15 +73,11 @@ const Home: NextPage = () => {
             <div className='m-8 flex'>
 
               <div className='p-8'>
-                <Image src="/loup_tribal.svg" alt='wolf logo' width={512} height={256}/>
+                <Image src="/AnimeChan.png" alt='wolf logo' width={1024} height={512}/>
               </div>
 
               <div className='p-8'>
-                <Image src="/loup_tribal.svg" alt='wolf logo' width={512} height={256}/>
-              </div>
-
-              <div className='p-8'>
-                <Image src="/loup_tribal.svg" alt='wolf logo' width={512} height={256}/>
+                <Image src="/RiotGames.png" alt='wolf logo' width={1024} height={512}/>
               </div>
             </div>
 
