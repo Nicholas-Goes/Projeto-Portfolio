@@ -61,7 +61,7 @@ const Home: NextPage = () => {
               <Image src="/loup_tribal.svg" alt='wolf logo' width={512} height={512}/>  
             <div className=''>
               <h1 className='text-3xl text-white mb-6 text-left'>Sobre Mim</h1> 
-              <p className='text-left text-sm text-white'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cupiditate labore maiores voluptatem obcaecati ea accusantium, facere incidunt beatae id debitis? Cum nulla esse modi nihil quod nemo est voluptatibus?</p>
+              <p className='text-left text-sm text-white'>Olá, Tudo Bom? Meu Nome é Nicholas Sou Desenvolvedor Front-end Junior Atualmente Focado Em Estudar ReactJs e derivados.</p>
             </div>       
           </div>
         </section>
