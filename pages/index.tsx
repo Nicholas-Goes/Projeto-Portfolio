@@ -21,39 +21,28 @@ const Home: NextPage = () => {
         </div>
 
         <nav>
-
           <ul className='hidden md:flex justify-center items-center w-full text-white'>
-
             <li className='px-6'><Link href="#home">Home</Link></li>
             <li className='px-6'><Link href="#sobre">Sobre</Link></li>
             <li className='px-6'><Link href="#projetos">Projetos</Link></li>
             <li className='px-6'><Link href="#contatos">Contato</Link></li>
-
           </ul>
 
           <div className="md:hidden text-white">
-
             <MenuIcon></MenuIcon>
-
           </div>
-
         </nav>       
       </header>
 
       <main>
         <section className='flex flex-col md:flex-row justify-center items-center bg-hero-pattern bg-cover bg-center py-96 w-full' id='home'>
-
           <div className='flex flex-col justify-center items-center'>
-
             <address className='text-xl text-white z-10'>Front-End Web Developer</address>
             <h1 className='text-6xl text-white z-10'>Nicholas <span className='text-orange-300'>Goes</span></h1>
-
           </div>
-
           <div className='mx-8 flex absolute opacity-30'>
             <Image src="/loup_tribal.svg" alt='wolf logo' width={316} height={442}/>   
           </div>
-
         </section>
 
         <section className='flex flex-row justify-center items-center bg-zinc-900 p-16' id='sobre'>
@@ -67,27 +56,20 @@ const Home: NextPage = () => {
         </section>
 
         <section className='flex flex-col justify-center items-center bg-zinc-900 p-16' id='projetos'>
-
             <h1 className='text-3xl text-white mb-6'>Projetos</h1>
-
             <div className='m-8 flex'>
-
               <div className='p-8'>
                 <Image src="/AnimeChan.png" alt='wolf logo' width={1024} height={512}/>
               </div>
-
               <div className='p-8'>
                 <Image src="/RiotGames.png" alt='wolf logo' width={1024} height={512}/>
               </div>
             </div>
-
         </section>
-        
       </main>
+
       <footer className='flex flex-row justify-center items-center bg-zinc-900 p-6'>
-
         <address className="text-white">Feito com ❤ por Nicholas Goes</address>
-
       </footer>
 
     </div>
